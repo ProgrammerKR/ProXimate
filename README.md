@@ -22,4 +22,4 @@
 Include ProXimate via [jsDelivr](https://www.jsdelivr.com/) or any other CDN:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/YourUsername/ProXimate/proximate.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ProgrammerKR/ProXimate/proximate.min.css">
