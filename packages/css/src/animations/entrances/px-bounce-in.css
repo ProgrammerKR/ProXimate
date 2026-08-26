@@ -1,0 +1,11 @@
+@keyframes px-bounce-in {
+  0% { opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+  50% { opacity: 1; transform: scale3d(1.05, 1.05, 1.05); }
+  70% { transform: scale3d(0.9, 0.9, 0.9); }
+  90% { transform: ; }
+  100% { opacity: 1; transform: scale3d(1, 1, 1); }
+}
+
+.px-bounce-in {
+  animation-name: px-bounce-in;
+}

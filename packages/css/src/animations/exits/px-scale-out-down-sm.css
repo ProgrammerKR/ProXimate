@@ -1,0 +1,8 @@
+@keyframes px-scale-out-down-sm {
+  0% { transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
+  100% { transform: scale3d(var(--px-scale-sm), var(--px-scale-sm), var(--px-scale-sm)) translate3d(0, var(--px-distance-md), 0); }
+}
+
+.px-scale-out-down-sm {
+  animation-name: px-scale-out-down-sm;
+}

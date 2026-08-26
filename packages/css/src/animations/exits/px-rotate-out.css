@@ -1,0 +1,8 @@
+@keyframes px-rotate-out {
+  0% { opacity: 1; transform: rotateZ(0deg); }
+  100% { opacity: 0; transform: rotateZ(var(--px-rotate-md)); }
+}
+
+.px-rotate-out {
+  animation-name: px-rotate-out;
+}

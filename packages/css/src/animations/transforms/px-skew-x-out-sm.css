@@ -1,0 +1,5 @@
+@keyframes px-skew-x-out-sm { 0% { opacity: 1; transform: skewX(0deg); } 100% { opacity: 0; transform: skewX(var(--px-rotate-sm)); } }
+
+.px-skew-x-out-sm {
+  animation-name: px-skew-x-out-sm;
+}

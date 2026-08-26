@@ -1,0 +1,8 @@
+@keyframes px-scale-out-up-pop {
+  0% { transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
+  100% { transform: scale3d(var(--px-scale-pop), var(--px-scale-pop), var(--px-scale-pop)) translate3d(0, -var(--px-distance-md), 0); }
+}
+
+.px-scale-out-up-pop {
+  animation-name: px-scale-out-up-pop;
+}

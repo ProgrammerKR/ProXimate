@@ -1,0 +1,8 @@
+@keyframes px-blur-out-sm {
+  0% { opacity: 1; filter: blur(0); }
+  100% { opacity: 0; filter: blur(4px); }
+}
+
+.px-blur-out-sm {
+  animation-name: px-blur-out-sm;
+}

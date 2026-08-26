@@ -1,0 +1,8 @@
+@keyframes px-slide-out-up-sm {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, -var(--px-distance-sm), 0); }
+}
+
+.px-slide-out-up-sm {
+  animation-name: px-slide-out-up-sm;
+}

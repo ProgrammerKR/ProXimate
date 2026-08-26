@@ -1,0 +1,8 @@
+@keyframes px-slide-in-down-lg {
+  0% { transform: translate3d(0, var(--px-distance-lg), 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+.px-slide-in-down-lg {
+  animation-name: px-slide-in-down-lg;
+}

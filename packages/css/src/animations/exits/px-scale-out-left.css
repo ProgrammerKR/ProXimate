@@ -1,0 +1,8 @@
+@keyframes px-scale-out-left {
+  0% { transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
+  100% { transform: scale3d(var(--px-scale-md), var(--px-scale-md), var(--px-scale-md)) translate3d(-var(--px-distance-md), 0, 0); }
+}
+
+.px-scale-out-left {
+  animation-name: px-scale-out-left;
+}

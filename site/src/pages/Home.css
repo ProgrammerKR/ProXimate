@@ -1,0 +1,249 @@
+.home-page {
+  padding-bottom: 4rem;
+}
+
+.hero-section {
+  padding: 6rem 0 4rem;
+  min-height: calc(100vh - var(--px-header-height));
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-section .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.5rem;
+}
+
+.hero-accent {
+  background: linear-gradient(to right, #ffffff, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--px-text-muted);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.hero-demo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-demo-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #0a0a0a;
+  border-color: #222;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-demo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--px-border);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-demo-stage {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+  border-radius: var(--px-radius);
+  border: 1px solid #222;
+  margin-bottom: 2rem;
+}
+
+.demo-element {
+  background: linear-gradient(135deg, var(--px-accent), #8b5cf6);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: var(--px-radius-lg);
+  font-weight: 600;
+  font-size: 1.25rem;
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);
+}
+
+.trust-section {
+  padding: 2rem 0;
+  border-top: 1px solid var(--px-border);
+  border-bottom: 1px solid var(--px-border);
+  background-color: var(--px-bg-subtle);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .trust-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.trust-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.trust-item strong {
+  font-size: 1.125rem;
+}
+
+.features-section {
+  padding: 8rem 0;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.03em;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.feature-card {
+  padding: 2rem;
+}
+
+.feature-icon {
+  color: var(--px-accent);
+  margin-bottom: 1.5rem;
+  width: 24px;
+  height: 24px;
+}
+
+.code-showcase-section {
+  padding: 6rem 0;
+  background-color: #0a0a0a;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.code-showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .code-showcase-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.code-showcase-text h2 {
+  font-size: 3rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.code-showcase-editor {
+  padding: 0;
+  background-color: #000;
+  border-color: #333;
+  overflow: hidden;
+}
+
+.editor-header {
+  background-color: #111;
+  border-bottom: 1px solid #333;
+  padding: 0 1rem;
+}
+
+.editor-tabs {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.editor-tab {
+  background: transparent;
+  border: none;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+  color: var(--px-text-muted);
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  font-family: inherit;
+}
+
+.editor-tab.active {
+  color: var(--px-text);
+  border-bottom-color: var(--px-accent);
+}
+
+.editor-content {
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: #e2e8f0;
+}
+
+.cta-section {
+  padding: 8rem 0;
+}
+
+.cta-content {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: radial-gradient(circle at top, #1a1a1a 0%, var(--px-bg-subtle) 100%);
+}

@@ -1,0 +1,8 @@
+@keyframes px-zoom-out-up-lg {
+  0% { opacity: 1; transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
+  100% { opacity: 0; transform: scale3d(var(--px-scale-lg), var(--px-scale-lg), var(--px-scale-lg)) translate3d(0, -var(--px-distance-md), 0); }
+}
+
+.px-zoom-out-up-lg {
+  animation-name: px-zoom-out-up-lg;
+}

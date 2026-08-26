@@ -1,0 +1,8 @@
+@keyframes px-blur-fade-in {
+  0% { opacity: 0; filter: blur(10px); }
+  100% { opacity: 1; filter: blur(0); }
+}
+
+.px-blur-fade-in {
+  animation-name: px-blur-fade-in;
+}

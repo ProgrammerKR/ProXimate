@@ -1,0 +1,8 @@
+@keyframes px-blur-fade-out-lg {
+  0% { opacity: 1; filter: blur(0); }
+  100% { opacity: 0; filter: blur(20px); }
+}
+
+.px-blur-fade-out-lg {
+  animation-name: px-blur-fade-out-lg;
+}

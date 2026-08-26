@@ -1,0 +1,8 @@
+@keyframes px-fade-slide-out-up-lg {
+  0% { opacity: 1; transform: translate3d(0, 0, 0); }
+  100% { opacity: 0; transform: translate3d(0, -var(--px-distance-lg), 0); }
+}
+
+.px-fade-slide-out-up-lg {
+  animation-name: px-fade-slide-out-up-lg;
+}

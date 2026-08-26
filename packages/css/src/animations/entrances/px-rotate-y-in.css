@@ -1,0 +1,8 @@
+@keyframes px-rotate-y-in {
+  0% { opacity: 0; transform: rotateY(var(--px-rotate-md)); }
+  100% { opacity: 1; transform: rotateY(0deg); }
+}
+
+.px-rotate-y-in {
+  animation-name: px-rotate-y-in;
+}

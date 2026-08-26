@@ -1,0 +1,225 @@
+.explorer-page {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.explorer-header-section {
+  border-bottom: 1px solid var(--px-border);
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+}
+
+.explorer-filters {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--px-bg-subtle);
+  border: 1px solid var(--px-border);
+  border-radius: var(--px-radius);
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s;
+}
+
+.search-bar:focus-within {
+  border-color: var(--px-accent);
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  color: var(--px-text);
+  font-size: 1rem;
+  font-family: var(--px-font-sans);
+  width: 100%;
+  outline: none;
+}
+
+.category-tabs {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: none;
+}
+
+.category-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.category-tab {
+  background: transparent;
+  border: 1px solid var(--px-border);
+  color: var(--px-text-muted);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.category-tab:hover {
+  border-color: var(--px-text-muted);
+  color: var(--px-text);
+}
+
+.category-tab.active {
+  background-color: var(--px-text);
+  color: var(--px-bg);
+  border-color: var(--px-text);
+}
+
+.animations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.animation-card {
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.animation-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+.animation-card-preview {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+  border-bottom: 1px solid var(--px-border);
+}
+
+.preview-dot {
+  width: 32px;
+  height: 32px;
+  background-color: var(--px-accent);
+  border-radius: 8px;
+}
+
+.animation-card-footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+.load-more-indicator, .empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+/* Playground */
+.playground-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.playground-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .playground-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.playground-stage {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+.playground-element {
+  background: linear-gradient(135deg, var(--px-accent), #8b5cf6);
+  color: white;
+  padding: 2rem 4rem;
+  border-radius: var(--px-radius-lg);
+  font-weight: 700;
+  font-size: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);
+}
+
+.playground-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.control-group label {
+  font-size: 0.875rem;
+  color: var(--px-text-muted);
+  font-weight: 500;
+}
+
+.control-group select {
+  padding: 0.75rem;
+  background-color: var(--px-bg);
+  border: 1px solid var(--px-border);
+  color: var(--px-text);
+  border-radius: var(--px-radius);
+  outline: none;
+  font-size: 0.875rem;
+}
+
+.control-group select:focus {
+  border-color: var(--px-accent);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.text-green {
+  color: #10b981;
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--px-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.code-block {
+  background-color: var(--px-bg);
+  border: 1px solid var(--px-border);
+  padding: 1rem;
+  border-radius: var(--px-radius);
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}

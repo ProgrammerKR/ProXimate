@@ -1,0 +1,8 @@
+@keyframes px-bounce-out-right {
+  20% { transform: translateX(-10px); }
+  100% { opacity: 0; transform: translateX(2000px); }
+}
+
+.px-bounce-out-right {
+  animation-name: px-bounce-out-right;
+}

@@ -1,0 +1,8 @@
+@keyframes px-slide-in-left-sm {
+  0% { transform: translate3d(-var(--px-distance-sm), 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+.px-slide-in-left-sm {
+  animation-name: px-slide-in-left-sm;
+}

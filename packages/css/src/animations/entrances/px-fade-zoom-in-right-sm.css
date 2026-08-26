@@ -1,0 +1,8 @@
+@keyframes px-fade-zoom-in-right-sm {
+  0% { opacity: 0; transform: scale3d(var(--px-scale-sm), var(--px-scale-sm), var(--px-scale-sm)); }
+  100% { opacity: 1; transform: scale3d(1, 1, 1); }
+}
+
+.px-fade-zoom-in-right-sm {
+  animation-name: px-fade-zoom-in-right-sm;
+}

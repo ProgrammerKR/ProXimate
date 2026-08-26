@@ -1,0 +1,8 @@
+@keyframes px-slide-out-right-sm {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(var(--px-distance-sm), 0, 0); }
+}
+
+.px-slide-out-right-sm {
+  animation-name: px-slide-out-right-sm;
+}

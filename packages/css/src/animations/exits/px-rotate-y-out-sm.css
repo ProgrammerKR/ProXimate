@@ -1,0 +1,8 @@
+@keyframes px-rotate-y-out-sm {
+  0% { opacity: 1; transform: rotateY(0deg); }
+  100% { opacity: 0; transform: rotateY(var(--px-rotate-sm)); }
+}
+
+.px-rotate-y-out-sm {
+  animation-name: px-rotate-y-out-sm;
+}

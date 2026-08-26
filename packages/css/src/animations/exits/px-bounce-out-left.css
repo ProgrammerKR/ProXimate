@@ -1,0 +1,8 @@
+@keyframes px-bounce-out-left {
+  20% { transform: translateX(10px); }
+  100% { opacity: 0; transform: translateX(-2000px); }
+}
+
+.px-bounce-out-left {
+  animation-name: px-bounce-out-left;
+}

@@ -1,0 +1,166 @@
+:root {
+  /* Colors */
+  --px-bg: #000000;
+  --px-bg-subtle: #111111;
+  --px-bg-hover: #1a1a1a;
+  
+  --px-text: #ededed;
+  --px-text-muted: #a1a1aa;
+  
+  --px-border: #333333;
+  --px-border-hover: #444444;
+  
+  --px-accent: #3b82f6; /* Modern technical blue */
+  --px-accent-hover: #2563eb;
+  --px-accent-alpha: rgba(59, 130, 246, 0.15);
+  
+  /* Typography */
+  --px-font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --px-font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  
+  /* Layout */
+  --px-container: 1200px;
+  --px-radius: 8px;
+  --px-radius-lg: 12px;
+  
+  /* Header */
+  --px-header-height: 64px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--px-bg);
+  color: var(--px-text);
+  font-family: var(--px-font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+/* Utilities */
+.container {
+  max-width: var(--px-container);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.text-muted {
+  color: var(--px-text-muted);
+}
+
+.mono {
+  font-family: var(--px-font-mono);
+}
+
+/* Typography elements */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--px-accent);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: var(--px-radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background-color: var(--px-text);
+  color: var(--px-bg);
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--px-bg-subtle);
+  color: var(--px-text);
+  border-color: var(--px-border);
+}
+
+.btn-secondary:hover {
+  background-color: var(--px-bg-hover);
+  border-color: var(--px-border-hover);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--px-text-muted);
+}
+
+.btn-ghost:hover {
+  color: var(--px-text);
+  background-color: var(--px-bg-subtle);
+}
+
+/* Base Cards */
+.card {
+  background-color: var(--px-bg-subtle);
+  border: 1px solid var(--px-border);
+  border-radius: var(--px-radius-lg);
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: var(--px-border-hover);
+}
+
+/* Code */
+pre {
+  background-color: var(--px-bg-subtle);
+  border: 1px solid var(--px-border);
+  border-radius: var(--px-radius);
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: var(--px-font-mono);
+  font-size: 0.875rem;
+}
+
+code {
+  font-family: var(--px-font-mono);
+}
+
+/* Flex utils */
+.flex { display: flex; }
+.flex-col { display: flex; flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.gap-2 { gap: 0.5rem; }
+.gap-4 { gap: 1rem; }
+.gap-8 { gap: 2rem; }

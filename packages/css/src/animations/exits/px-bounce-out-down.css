@@ -1,0 +1,8 @@
+@keyframes px-bounce-out-down {
+  20% { transform: translateY(-10px); }
+  100% { opacity: 0; transform: translateY(2000px); }
+}
+
+.px-bounce-out-down {
+  animation-name: px-bounce-out-down;
+}

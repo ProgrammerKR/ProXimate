@@ -1,0 +1,24 @@
+{
+  "name": "@proximate/css",
+  "version": "0.1.0",
+  "description": "Core CSS architecture and animation catalogue for ProXimate",
+  "main": "dist/proximate.css",
+  "style": "dist/proximate.css",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "postcss src/index.css -o dist/proximate.css && postcss src/index.css -o dist/proximate.min.css --env production",
+    "dev": "postcss src/index.css -o dist/proximate.css -w"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^9.1.1",
+    "cssnano": "^6.0.1"
+  },
+  "author": "ProgrammerKR",
+  "license": "MIT"
+}

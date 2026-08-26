@@ -1,0 +1,8 @@
+@keyframes px-fade-slide-in-down-left-lg {
+  0% { opacity: 0; transform: translate3d(-var(--px-distance-lg), var(--px-distance-lg), 0); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+.px-fade-slide-in-down-left-lg {
+  animation-name: px-fade-slide-in-down-left-lg;
+}

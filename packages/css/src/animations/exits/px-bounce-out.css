@@ -1,0 +1,8 @@
+@keyframes px-bounce-out {
+  20% { transform: scale3d(0.9, 0.9, 0.9); }
+  100% { opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+}
+
+.px-bounce-out {
+  animation-name: px-bounce-out;
+}

@@ -1,0 +1,8 @@
+@keyframes px-fade-zoom-in-left-lg {
+  0% { opacity: 0; transform: scale3d(var(--px-scale-lg), var(--px-scale-lg), var(--px-scale-lg)); }
+  100% { opacity: 1; transform: scale3d(1, 1, 1); }
+}
+
+.px-fade-zoom-in-left-lg {
+  animation-name: px-fade-zoom-in-left-lg;
+}

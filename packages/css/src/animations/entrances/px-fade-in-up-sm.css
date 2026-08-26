@@ -1,0 +1,8 @@
+@keyframes px-fade-in-up-sm {
+  0% { opacity: 0; transform: translate3d(0, -var(--px-distance-sm), 0); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+.px-fade-in-up-sm {
+  animation-name: px-fade-in-up-sm;
+}

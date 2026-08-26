@@ -1,0 +1,5 @@
+@keyframes px-skew-y-in-sm { 0% { opacity: 0; transform: skewY(var(--px-rotate-sm)); } 100% { opacity: 1; transform: skewY(0deg); } }
+
+.px-skew-y-in-sm {
+  animation-name: px-skew-y-in-sm;
+}

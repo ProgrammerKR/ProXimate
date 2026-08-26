@@ -1,0 +1,43 @@
+:root {
+  /* Durations */
+  --px-duration-instant: 100ms;
+  --px-duration-fast: 250ms;
+  --px-duration-normal: 400ms;
+  --px-duration-slow: 650ms;
+  --px-duration-deliberate: 1000ms;
+
+  /* Easings */
+  --px-ease-standard: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --px-ease-smooth: cubic-bezier(0.25, 1, 0.5, 1);
+  --px-ease-emphasized: cubic-bezier(0.2, 0.0, 0, 1.0);
+  --px-ease-linear: linear;
+  --px-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --px-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --px-ease-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* Distance Scales (for enters/exits) */
+  --px-distance-sm: 10px;
+  --px-distance-md: 20px;
+  --px-distance-lg: 40px;
+  --px-distance-xl: 100%;
+
+  /* Scale Factors */
+  --px-scale-sm: 0.95;
+  --px-scale-md: 0.9;
+  --px-scale-lg: 0.8;
+  --px-scale-pop: 1.05;
+
+  /* Rotation */
+  --px-rotate-sm: 5deg;
+  --px-rotate-md: 15deg;
+  --px-rotate-lg: 45deg;
+  --px-rotate-flip: 90deg;
+
+  /* Defaults used by base class */
+  --px-duration: var(--px-duration-normal);
+  --px-delay: 0ms;
+  --px-ease: var(--px-ease-standard);
+  --px-iteration-count: 1;
+  --px-direction: normal;
+  --px-fill-mode: both;
+}

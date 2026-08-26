@@ -1,0 +1,8 @@
+@keyframes px-fade-in-up-left {
+  0% { opacity: 0; transform: translate3d(-var(--px-distance-md), -var(--px-distance-md), 0); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+.px-fade-in-up-left {
+  animation-name: px-fade-in-up-left;
+}

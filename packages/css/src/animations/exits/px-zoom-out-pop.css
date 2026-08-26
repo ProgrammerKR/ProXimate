@@ -1,0 +1,8 @@
+@keyframes px-zoom-out-pop {
+  0% { opacity: 1; transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
+  100% { opacity: 0; transform: scale3d(var(--px-scale-pop), var(--px-scale-pop), var(--px-scale-pop)); }
+}
+
+.px-zoom-out-pop {
+  animation-name: px-zoom-out-pop;
+}

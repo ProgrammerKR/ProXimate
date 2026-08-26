@@ -1,0 +1,22 @@
+/* Duration Utilities */
+.px-duration-instant { --px-duration: var(--px-duration-instant); }
+.px-duration-fast { --px-duration: var(--px-duration-fast); }
+.px-duration-normal { --px-duration: var(--px-duration-normal); }
+.px-duration-slow { --px-duration: var(--px-duration-slow); }
+.px-duration-deliberate { --px-duration: var(--px-duration-deliberate); }
+
+/* Delay Utilities */
+.px-delay-100 { --px-delay: 100ms; }
+.px-delay-200 { --px-delay: 200ms; }
+.px-delay-300 { --px-delay: 300ms; }
+.px-delay-400 { --px-delay: 400ms; }
+.px-delay-500 { --px-delay: 500ms; }
+
+/* Easing Utilities */
+.px-ease-standard { --px-ease: var(--px-ease-standard); }
+.px-ease-smooth { --px-ease: var(--px-ease-smooth); }
+.px-ease-emphasized { --px-ease: var(--px-ease-emphasized); }
+.px-ease-linear { --px-ease: var(--px-ease-linear); }
+.px-ease-in { --px-ease: var(--px-ease-in); }
+.px-ease-out { --px-ease: var(--px-ease-out); }
+.px-ease-elastic { --px-ease: var(--px-ease-elastic); }

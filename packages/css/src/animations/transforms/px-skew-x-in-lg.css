@@ -1,0 +1,5 @@
+@keyframes px-skew-x-in-lg { 0% { opacity: 0; transform: skewX(var(--px-rotate-lg)); } 100% { opacity: 1; transform: skewX(0deg); } }
+
+.px-skew-x-in-lg {
+  animation-name: px-skew-x-in-lg;
+}

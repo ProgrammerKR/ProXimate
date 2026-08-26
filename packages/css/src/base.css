@@ -1,0 +1,17 @@
+.px-animate {
+  animation-duration: var(--px-duration);
+  animation-delay: var(--px-delay);
+  animation-timing-function: var(--px-ease);
+  animation-iteration-count: var(--px-iteration-count);
+  animation-direction: var(--px-direction);
+  animation-fill-mode: var(--px-fill-mode);
+}
+
+/* Reduced Motion Configuration */
+@media (prefers-reduced-motion: reduce) {
+  .px-animate:not([data-px-reduced-motion="never"]) {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}

@@ -1,0 +1,8 @@
+@keyframes px-fade-out-up {
+  0% { opacity: 1; transform: translate3d(0, 0, 0); }
+  100% { opacity: 0; transform: translate3d(0, -var(--px-distance-md), 0); }
+}
+
+.px-fade-out-up {
+  animation-name: px-fade-out-up;
+}

@@ -1,0 +1,8 @@
+@keyframes px-scale-in {
+  0% { transform: scale3d(var(--px-scale-md), var(--px-scale-md), var(--px-scale-md)); }
+  100% { transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
+}
+
+.px-scale-in {
+  animation-name: px-scale-in;
+}

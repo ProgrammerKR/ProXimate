@@ -1,0 +1,22 @@
+{
+  "name": "@proximate/cli",
+  "version": "0.1.0",
+  "description": "CLI for ProXimate animation toolkit",
+  "bin": {
+    "proximate": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs --minify",
+    "dev": "tsup src/index.ts --format cjs --watch"
+  },
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2"
+  },
+  "author": "ProgrammerKR",
+  "license": "MIT"
+}

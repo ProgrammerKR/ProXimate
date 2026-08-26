@@ -1,0 +1,8 @@
+@keyframes px-flip-in-x {
+  0% { opacity: 0; transform: perspective(400px) rotateX(var(--px-rotate-flip)); }
+  100% { opacity: 1; transform: perspective(400px) rotateX(0deg); }
+}
+
+.px-flip-in-x {
+  animation-name: px-flip-in-x;
+}
