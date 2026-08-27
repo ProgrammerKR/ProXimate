@@ -11,7 +11,7 @@ Unlike traditional animation libraries that ship massive monolithic stylesheets,
 - **CSS-First Architecture:** Zero unnecessary JavaScript runtime overhead.
 - **Tree-Shakable:** Only ship the animations you actually use.
 - **Accessibility-First:** Built-in `prefers-reduced-motion` handling by default.
-- **Framework-Friendly:** Dedicated `@proximate/react` integration, and highly compatible with Vue, Svelte, and vanilla JS.
+- **Framework-Friendly:** Dedicated `@proximate-css/react` integration, and highly compatible with Vue, Svelte, and vanilla JS.
 - **Composable:** Control duration, delay, easing, and staggering with simple, chainable CSS utilities or JavaScript APIs.
 - **Viewport Orchestration:** Built-in IntersectionObserver logic for seamless scroll reveals.
 - **Performance:** Relies strictly on compositor-friendly properties (transform, opacity, filter).
@@ -21,12 +21,12 @@ Unlike traditional animation libraries that ship massive monolithic stylesheets,
 Install the core packages via npm, pnpm, or yarn:
 
 ```bash
-npm install @proximate/css @proximate/core
+npm install @proximate-css/css @proximate-css/core
 ```
 
 For React environments:
 ```bash
-npm install @proximate/react
+npm install @proximate-css/react
 ```
 
 ## Quick Start
@@ -36,7 +36,7 @@ npm install @proximate/react
 Import the animations you need and apply the base `px-animate` class along with the specific animation class:
 
 ```html
-<link rel="stylesheet" href="node_modules/@proximate/css/dist/proximate.min.css">
+<link rel="stylesheet" href="node_modules/@proximate-css/css/dist/proximate.min.css">
 
 <div class="px-animate px-fade-in-up px-duration-fast px-delay-100">
   Hello, World!
@@ -45,10 +45,10 @@ Import the animations you need and apply the base `px-animate` class along with 
 
 ### Vanilla JavaScript
 
-Use the `@proximate/core` runtime to dynamically trigger animations and stagger elements:
+Use the `@proximate-css/core` runtime to dynamically trigger animations and stagger elements:
 
 ```js
-import { animate, stagger, reveal } from '@proximate/core';
+import { animate, stagger, reveal } from '@proximate-css/core';
 
 // Single element animation
 animate('.card', {
@@ -75,7 +75,7 @@ reveal('.reveal-box', {
 Use the `<Motion>` polymorphic component for a first-class React experience:
 
 ```jsx
-import { Motion } from '@proximate/react';
+import { Motion } from '@proximate-css/react';
 
 function App() {
   return (
@@ -101,7 +101,7 @@ ProXimate respects the user's OS-level motion preferences by default. When `@med
 You can configure this behavior globally in JS:
 
 ```js
-import { configure } from '@proximate/core';
+import { configure } from '@proximate-css/core';
 
 configure({
   reducedMotion: 'respect' // 'respect', 'always', 'never'

@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Motion } from '@proximate/react';
+import { Motion } from '@proximate-css/react';
 import { Search, Play, Code, Copy, Check } from 'lucide-react';
 import { Highlight, themes } from 'prism-react-renderer';
 import ANIMATIONS from '../manifest.json';

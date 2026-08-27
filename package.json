@@ -10,12 +10,15 @@
   "scripts": {
     "build": "npm run build --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
-    "lint": "eslint packages/*",
-    "format": "prettier --write \"packages/**/*.{ts,js,json,css}\""
+    "lint": "eslint \"packages/**\"",
+    "format": "prettier --write \"packages/**/*.{ts,js,json,css}\"",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
+    "@typescript-eslint/eslint-plugin": "^8.68.0",
+    "@typescript-eslint/parser": "^8.68.0",
     "eslint": "^8.50.0",
     "jsdom": "^30.0.1",
     "prettier": "^3.0.0",

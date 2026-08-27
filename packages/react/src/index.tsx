@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { animate, AnimationInstance, AnimateOptions, reveal, stagger, configure } from '@proximate/core';
+import { animate, AnimationInstance, AnimateOptions, reveal, stagger, configure } from '@proximate-css/core';
 
 export interface MotionProps extends AnimateOptions {
   children: React.ReactNode;
@@ -32,12 +32,25 @@ export const Motion = React.forwardRef<HTMLElement, MotionProps>(({
   onCancel,
   ...rest
 }, forwardedRef) => {
-  const localRef = useRef<HTMLElement>(null);
-  const ref = (forwardedRef || localRef) as React.MutableRefObject<HTMLElement>;
+  const localRef = useRef<HTMLElement | null>(null);
+  
+  const setRefs = React.useCallback(
+    (element: HTMLElement | null) => {
+      localRef.current = element;
+      if (typeof forwardedRef === 'function') {
+        forwardedRef(element);
+      } else if (forwardedRef) {
+        (forwardedRef as React.MutableRefObject<HTMLElement | null>).current = element;
+      }
+    },
+    [forwardedRef]
+  );
+
   const [animationInstance, setAnimationInstance] = useState<AnimationInstance | null>(null);
 
   useEffect(() => {
-    if (!ref.current) return;
+    if (!localRef.current) return;
+    const currentEl = localRef.current;
 
     const options = {
       animation,
@@ -53,12 +66,12 @@ export const Motion = React.forwardRef<HTMLElement, MotionProps>(({
     };
 
     if (useReveal) {
-      const observer = reveal(ref.current, { ...options, threshold, once });
+      const observer = reveal(currentEl, { ...options, threshold, once });
       return () => {
         observer?.disconnect();
       };
     } else {
-      const instance = animate(ref.current, options);
+      const instance = animate(currentEl, options);
       setAnimationInstance(instance);
       return () => {
         instance.cancel();
@@ -76,7 +89,7 @@ export const Motion = React.forwardRef<HTMLElement, MotionProps>(({
   // but for a pure CSS library, we might want it immediately. We'll let `animate()` handle it.
   return (
     <Tag
-      ref={ref}
+      ref={setRefs}
       className={className}
       style={style}
       {...rest}

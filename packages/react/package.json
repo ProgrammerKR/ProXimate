@@ -1,5 +1,5 @@
 {
-  "name": "@proximate/react",
+  "name": "@proximate-css/react",
   "version": "0.1.0",
   "description": "React integration for ProXimate animation toolkit",
   "main": "./dist/index.js",
@@ -24,7 +24,7 @@
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
-    "@proximate/core": "*"
+    "@proximate-css/core": "*"
   },
   "devDependencies": {
     "tsup": "^7.2.0",

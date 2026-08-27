@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProXimate CDN Example</title>
+  <!-- Load ProXimate CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/@proximate-css/css/dist/proximate.min.css">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f0fdf4;
+      color: #1f2937;
+    }
+    .box {
+      width: 150px;
+      height: 150px;
+      background: #22c55e;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      margin: 1rem;
+    }
+    button {
+      margin-top: 2rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background: #16a34a;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #15803d;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>ProXimate CDN Usage</h1>
+
+  <!-- Simple CSS animation (pure CSS) -->
+  <div class="box px-animate px-fade-in-up px-duration-normal">
+    CSS Only
+  </div>
+
+  <!-- Javascript triggered animation -->
+  <div id="js-box" class="box">
+    JS Triggered
+  </div>
+
+  <button id="trigger">Trigger Animation</button>
+
+  <!-- Load ProXimate Core JS -->
+  <script src="https://unpkg.com/@proximate-css/core/dist/index.global.js"></script>
+  
+  <script>
+    // The core library exposes a global ProXimate object
+    const { animate } = ProXimate;
+
+    const btn = document.getElementById('trigger');
+    const jsBox = document.getElementById('js-box');
+
+    // Create a reusable animation instance
+    const animation = animate(jsBox, {
+      animation: 'zoom-in',
+      duration: 500,
+      easing: 'ease-out'
+    });
+
+    // It plays immediately by default. Pause it so we can trigger it manually.
+    animation.cancel();
+
+    btn.addEventListener('click', () => {
+      // Re-trigger the animation
+      animation.cancel();
+      animation.play();
+    });
+  </script>
+</body>
+</html>

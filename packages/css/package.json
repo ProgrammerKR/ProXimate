@@ -1,9 +1,11 @@
 {
-  "name": "@proximate/css",
+  "name": "@proximate-css/css",
   "version": "0.1.0",
   "description": "Core CSS architecture and animation catalogue for ProXimate",
   "main": "dist/proximate.css",
   "style": "dist/proximate.css",
+  "unpkg": "dist/proximate.min.css",
+  "jsdelivr": "dist/proximate.min.css",
   "files": [
     "dist",
     "src"

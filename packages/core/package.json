@@ -1,5 +1,5 @@
 {
-  "name": "@proximate/core",
+  "name": "@proximate-css/core",
   "version": "0.1.0",
   "description": "Vanilla JavaScript runtime for ProXimate",
   "main": "./dist/index.js",
@@ -12,12 +12,14 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "unpkg": "./dist/index.global.js",
+  "jsdelivr": "./dist/index.global.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
-    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "build": "tsup src/index.ts --format cjs,esm,iife --globalName ProXimate --dts",
+    "dev": "tsup src/index.ts --format cjs,esm,iife --globalName ProXimate --dts --watch",
     "test": "vitest run"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 {
-  "name": "@proximate/cli",
+  "name": "@proximate-css/cli",
   "version": "0.1.0",
   "description": "CLI for ProXimate animation toolkit",
   "bin": {

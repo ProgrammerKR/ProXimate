@@ -24,10 +24,10 @@ export function stagger(
     if (staggerDir === 'reverse') {
       index = total - 1 - i;
     } else if (staggerDir === 'center-out') {
-      const center = Math.floor(total / 2);
+      const center = (total - 1) / 2;
       index = Math.abs(center - i);
     } else if (staggerDir === 'edges-in') {
-      const center = Math.floor(total / 2);
+      const center = (total - 1) / 2;
       index = center - Math.abs(center - i);
     }
 

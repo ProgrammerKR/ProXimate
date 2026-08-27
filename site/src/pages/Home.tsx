@@ -1,4 +1,4 @@
-import { Motion } from '@proximate/react';
+import { Motion } from '@proximate-css/react';
 import { ArrowRight, Box, Layout as LayoutIcon, Settings2, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Home.css';
@@ -8,7 +8,7 @@ import { Highlight, themes } from 'prism-react-renderer';
 const CODE_EXAMPLES = {
   react: {
     language: 'tsx',
-    code: `import { Motion } from "@proximate/react";
+    code: `import { Motion } from "@proximate-css/react";
 
 export function Card() {
   return (
@@ -26,8 +26,8 @@ export function Card() {
   },
   vanilla: {
     language: 'javascript',
-    code: `import { animate, reveal } from "@proximate/core";
-import "@proximate/css/dist/proximate.css";
+    code: `import { animate, reveal } from "@proximate-css/core";
+import "@proximate-css/css/dist/proximate.css";
 
 const element = document.querySelector('.card');
 
@@ -46,7 +46,7 @@ reveal(element, {
   html: {
     language: 'html',
     code: `<!-- 1. Include the stylesheet -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@proximate/css/dist/proximate.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@proximate-css/css/dist/proximate.min.css" />
 
 <!-- 2. Apply classes to your elements -->
 <section class="card px-animate px-fade-in-up px-duration-normal">

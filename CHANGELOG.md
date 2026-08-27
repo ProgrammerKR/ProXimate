@@ -9,11 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Initial monorepo scaffolding using npm workspaces.
-- `@proximate/css`: Core CSS architecture, tokens, and base `.px-animate` class.
-- `@proximate/css`: Animation catalogue including Entrance, Exit, Attention, and UI families.
-- `@proximate/core`: Vanilla JavaScript runtime with `animate()`, `stagger()`, and `reveal()` APIs.
-- `@proximate/react`: Polymorphic React `<Motion>` component utilizing the core runtime.
-- `@proximate/cli`: Skeleton CLI tooling with `commander` for future custom building and generation.
+- `@proximate-css/css`: Core CSS architecture, tokens, and base `.px-animate` class.
+- `@proximate-css/css`: Animation catalogue including Entrance, Exit, Attention, and UI families.
+- `@proximate-css/core`: Vanilla JavaScript runtime with `animate()`, `stagger()`, and `reveal()` APIs.
+- `@proximate-css/react`: Polymorphic React `<Motion>` component utilizing the core runtime.
+- `@proximate-css/cli`: Skeleton CLI tooling with `commander` for future custom building and generation.
 - `site`: Interactive Animation Explorer built with Vite and React.
 - Accessibility defaults respecting `@media (prefers-reduced-motion: reduce)`.
 - Vitest testing setup for runtime APIs.
